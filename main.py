@@ -89,7 +89,7 @@ def printStats(pop,gen):
         # if ind.objectives[1] > maxval:
         #     costval,maxval=ind.objectives
         #     mutRate=ind.mutRate
-        print(f'{ind.path} {ind.objectives["isArrive"]} {ind.objectives["isArrive2"]} {ind.objectives["step"]}')
+        print(f'{ind.path} {ind.objectives["isArrive"]} {ind.objectives["isArrive2"]} {ind.objectives["score"]} {ind.objectives["step"]}')
         break
 
     # print('Max Damage',maxval)
