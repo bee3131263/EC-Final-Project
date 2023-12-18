@@ -5,9 +5,7 @@
 
 import copy
 import math
-from operator import attrgetter
 from Individual import *
-# import matplotlib.pyplot as plt
 
 class Population:
     """
@@ -236,9 +234,8 @@ class Population:
             plt.show()
         
     def sort(self):
-        #self.population.sort(key=lambda ind: (-ind.objectives["step"]))
-        #self.population.sort(key=lambda ind: (-ind.objectives["step"]))
-        self.population.sort(key=lambda ind: (-ind.objectives["isArrive"], -ind.objectives["score"], -ind.objectives["step"]))
+        # self.population.sort(key=lambda ind: (-ind.objectives["step"]))
+        self.population.sort(key=lambda ind: (-ind.objectives["isArrive"], -ind.objectives["step"]))
                 
     def __str__(self):
         s=''
